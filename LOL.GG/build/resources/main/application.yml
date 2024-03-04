@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_db?useSSL=false&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+  thymeleaf:
+    cache: false
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update
+
+Jwt:
+  secret: hello.world.ee.ff
+
+twilio:
+  account-sid: ACf32a69884645dc2e85783c1168a67d70
+  auth_token: 8724113bb2d20328bb853ecaee6c573e
+  trial_number: +15077881137
+
+smtp:
+  host: smtp.gmail.com
+  port: 587
+  username: yapiiens@gmail.com
+  password: xbvvelrmpgwbtuuk
+  auth: true
+  starttls:
+    enable: true
+
+riot:
+  api:
+    key: RGAPI-8b220436-97bb-4385-b7e5-a4c7174c2b20
